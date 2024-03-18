@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cours1604"
+        android:padding="20dp"
+        android:textSize="25dp"
+        android:background="#3d5a80"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+         />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Matricule:"/>
+        <EditText
+            android:layout_width="300dp"
+            android:id="@+id/matriculeEditText"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="nom:"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/nomEditText"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="prenom:"/>
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/prenomEditText"/>
+
+
+    </LinearLayout>
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        >
+
+        <Button
+            android:text="supprimer"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:layout_margin="5pt"
+            android:id="@+id/supprimerButton"
+            />
+        <Button
+            android:text="ajouter"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:layout_margin="5pt"
+            android:id="@+id/ajouterButton"/>
+        <Button
+            android:text="chercher"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:layout_margin="5pt"
+            android:id="@+id/chercherButton"/>
+
+        <Button
+            android:text="afficher tous"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:id="@+id/afficherButton"
+            />
+        <Button
+            android:text="modifier"
+            android:layout_columnWeight="1"
+            android:layout_width="0dp"
+            android:layout_marginLeft="5pt"
+            />
+    </GridLayout>
+
+
+</LinearLayout>
