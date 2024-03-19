@@ -104,6 +104,7 @@
         <Button
             android:text="modifier"
             android:layout_columnWeight="1"
+            android:id="@+id/modifierButton"
             android:layout_width="0dp"
             android:layout_marginLeft="5pt"
             />

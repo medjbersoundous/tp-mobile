@@ -67,7 +67,7 @@ public class DBHandler extends SQLiteOpenHelper {
         return student;
     }
 
-    // Method to update student information
+
     public int updateStudent(student student) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues values = new ContentValues();
@@ -78,7 +78,6 @@ public class DBHandler extends SQLiteOpenHelper {
                 new String[]{String.valueOf(student.getId())});
     }
 
-    // Method to delete a student
     public void deleteStudent(student student) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_STUDENT, COLUMN_ID + " = ?",
@@ -86,7 +85,7 @@ public class DBHandler extends SQLiteOpenHelper {
         db.close();
     }
 
-    // Method to retrieve all students
+
     public List<student> getAllStudents() {
         List<student> studentList = new ArrayList<>();
         String selectQuery = "SELECT * FROM " + TABLE_STUDENT;
